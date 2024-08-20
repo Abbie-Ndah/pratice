@@ -1,0 +1,214 @@
+.d-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row{
+    flex-direction: row;
+}
+
+column{
+    flex-direction: column;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.wrapper{
+    overflow: auto;
+}
+.box{
+    background-color: rgb(49, 20, 20);
+    min-width: 300px;
+    height: 300px;
+    margin: 5px;
+    color: palevioletred;
+    
+}
+.cupboard{
+    background-color: rgb(49, 20, 20);
+    min-width: 300px;
+    height: 300px;
+    margin: 5px;
+    color: palevioletred;
+    
+}
+.band{
+    background-color: rgb(49, 20, 20);
+    min-width: 300px;
+    height: 300px;
+    margin: 5px;
+    color: palevioletred;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+.image{
+    position: absolute;
+    top: 3px;
+    right: -10px;
+    border-radius: 50%;
+    
+
+}
+.image > img{
+    height:100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid whitesmoke ;
+}
+.card > .image >img {
+    
+    height:100%;
+    width: 100%;
+    
+    border-radius: 50%;
+    
+}
+.content{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
+.images{
+    position: absolute;
+   
+
+}
+.images > img{
+    height:100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid whitesmoke ;
+}
+.card > .images >img {
+    
+    height:100%;
+    width: 100%;
+    
+    border-radius: 50%;
+    
+}
+.contents{
+    position: absolute;
+    
+}
+.amine{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: purple;
+    top: 60px;
+    left: 70px;
+    animation: slide 4s ease-in-out infinite;
+
+}
+@keyframes slide {
+    0%{
+        background-color: blueviolet; margin-left: 300px;
+    }
+    
+    0%{
+        background-color: green; margin-left: 300px;
+    }
+    
+    0%{
+        background-color: red; margin-left: 300px;
+    }
+    50%{
+        background-color: blue; margin-left: 300px;
+    }
+}
+.amine1{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(59, 50, 59);
+    top: 60px;
+    right: 100px;
+    animation: rotate 4s ease-in-out infinite;
+}
+@keyframes rotate {
+    0%{
+        background-color: blueviolet; margin-left: 300px;
+    }
+    
+    50%{
+        background-color: aquamarine; margin-left: 300px;
+    }
+    
+    100%{
+        background-color: brown; margin-left: 300px;
+    }
+}
+.ripple{
+    background-color: red;
+    position: absolute;
+    width: 50px;
+    height: 60px;
+    border-radius: 50%;
+    left: 5px;
+    bottom: 10px;
+    animation: ripple 0.7s infinite;
+}
+@keyframes ripple {
+    0%{
+        background-color: blueviolet; transform: scale(0); border: 10px solid brown;
+    }
+    
+    25%{
+        background-color: rgb(116, 121, 196); transform: scale(1); border: 6px solid rgb(158, 231, 22);
+    }
+    50%{
+        background-color: rgb(184, 20, 148); transform: scale(1.2); border: 10px solid rgb(90, 171, 209);
+    }
+    100%{
+        background-color: brown; transform: scale(1.4); border: 6px solid pink;
+    }
+}
+
+.pulse{
+   position: absolute;
+    background-color: #2bbbd8;
+    width: 150px;
+    height: 140px;
+    border-radius: 50%; 
+    left: 80px;
+    bottom: 20px;
+}
+
+.ring{
+    position: absolute;   
+    background-color: inherit;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    opacity: 0.8;
+    animation: pulsing 3s ease-out infinite;
+}
+.ring:nth-of-type(1){
+    animation-delay: -1s;
+
+}
+.ring:nth-of-type(2){
+    animation-delay: -2s;
+
+}
+.ring:nth-of-type(3){
+    animation-delay: -3s;
+
+}
+
+@keyframes pulsing {
+    100%{
+         transform: scale(2); opacity: 0;
+    }
+}
+ 
